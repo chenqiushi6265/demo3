@@ -9,6 +9,7 @@ export const getDateSection = (group, value) => {
   // console.log(moment(value).endOf('day').format("YYYY-MM-DD"));
   let start = value,
     end = value;
+  console.log('00000')
   if (group === 'hour') return { start, end };
   const groupStyle = DATE_TRUNC_FIELD[group];
   start = moment(value).startOf(groupStyle).format('YYYY-MM-DD');

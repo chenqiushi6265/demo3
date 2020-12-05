@@ -15,5 +15,6 @@ export const getDateSection = (group, value) => {
   start = moment(value).startOf(groupStyle).format('YYYY-MM-DD');
   end = moment(value).endOf(groupStyle).format('YYYY-MM-DD');
   console.log('222224444')
+  console.log('测试分支')
   return { start, end };
 };

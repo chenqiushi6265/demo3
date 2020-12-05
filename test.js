@@ -14,9 +14,9 @@ export const getDateSection = (group, value) => {
   const groupStyle = DATE_TRUNC_FIELD[group];
   start = moment(value).startOf(groupStyle).format('YYYY-MM-DD');
   console.log('1111')
+  console.log('main分支')
   end = moment(value).endOf(groupStyle).format('YYYY-MM-DD');
   console.log('222224444')
-  console.log('22222')
   console.log('3333')
   return { start, end };
 };
